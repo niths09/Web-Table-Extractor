@@ -1,28 +1,41 @@
-# Wikipedia Population Table Data Extraction  
+# Sensex Table Extraction  
 
-This project demonstrates web scraping using Selenium WebDriver to extract data from an HTML table on a Wikipedia page. Specifically, it retrieves the list of countries and territories by total population, presenting a real-world example of data extraction and automation using Selenium.
+This project automates the extraction of data from the Indian Indices table on the MoneyControl website. The extracted data provides insights into NIFTY 50 market trends, including real-time values such as the Last Traded Price (LTP), percentage change, volume and more. The data is displayed in a neatly formatted table in the console.  
 
 ## Features  
-- Automates navigation to a Wikipedia page on country populations.  
-- Extracts data from an HTML table, including:  
-  - **Location** (Country or territory)  
-  - **Population**  
-  - **Percentage of world population**  
-  - **Date** of population data  
-  - **Source** of the data  
-  - **Notes**  
-- Processes table rows dynamically to handle updates to the table structure or content.  
-- Uses JavaScript for smooth scrolling to the target table.  
 
-## Prerequisites  
-Ensure you have the following before running the project:  
-1. **Java Development Kit (JDK)** - Version 8 or above.   
-2. **Google Chrome** - Latest stable version.  
-3. **ChromeDriver** - Version compatible with your Chrome browser.  
-4. **Selenium WebDriver** - Included in the project dependencies.  
+### Indian Indices Extraction  
+- Extracts live data from the **Indian Indices - NIFTY 50** table on the MoneyControl website.  
+- Columns extracted include:  
+  - **Name**: Name of the stock or index.  
+  - **LTP**: Last traded price.  
+  - **%Chg**: Percentage change in price.  
+  - **Chg**: Change in price.  
+  - **Volume**: Total trading volume.  
+  - **Buy Price**: Current buy price.  
+  - **Sell Price**: Current sell price.  
+  - **Buy Qty**: Quantity available for buying.  
+  - **Sell Qty**: Quantity available for selling.  
+  - **Analysis**: Additional analysis details.  
+
+### Console Output  
+- Displays the extracted data in a visually formatted table with proper alignment and separators for easy readability.  
+
+### Scroll Functionality  
+- Uses JavaScript Executor to scroll the webpage to ensure that the dynamic content is fully loaded before extraction.  
+
+## Pre-requisites  
+
+Before running this project, ensure the following are installed:  
+1. **Java Development Kit (JDK)** - Version 8 or higher.  
+2. **Selenium WebDriver** - Include Selenium libraries in your project.  
+3. **Google Chrome** - Latest version of the Chrome browser.  
+4. **ChromeDriver** - Ensure the ChromeDriver version matches your Chrome browser.  
+5. **Integrated Development Environment (IDE)** - IntelliJ IDEA, Eclipse, or any other IDE for Java development.  
 
 ## Technologies Used  
-- **Java** - The programming language for the project.  
-- **Selenium WebDriver** - For web element interaction and automation.  
-- **Google Chrome & ChromeDriver** - For browser-based automation.  
-- **JavaScript Executor** - For advanced browser interactions like scrolling.
+
+- **Java** - Programming language used for development.  
+- **Selenium WebDriver** - To interact with and extract data from the MoneyControl website.  
+- **Google Chrome & ChromeDriver** - For browsing and interacting with the webpage.  
+- **JavaScript Executor** - For scrolling functionality.  
